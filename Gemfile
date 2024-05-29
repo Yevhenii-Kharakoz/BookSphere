@@ -52,6 +52,7 @@ end
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
+  # Provides a web interface for viewing sent emails in development [https://github.com/fgrehm/letter_opener_web]
   gem "letter_opener_web"
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
@@ -63,15 +64,31 @@ end
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
+  # A driver for Capybara that provides support for Selenium [https://github.com/SeleniumHQ/selenium]
   gem "selenium-webdriver"
 end
 
+# Flexible authentication solution for Rails with Warden [https://github.com/heartcombo/devise]
 gem "devise"
+
+# The administration framework for Rails applications [https://github.com/activeadmin/activeadmin]
 gem "activeadmin"
+
+# Integrates SassC with the Rails asset pipeline [https://github.com/sass/sassc-rails]
 gem "sassc-rails"
+
+# Integrate CSS bundling into your Rails app [https://github.com/rails/cssbundling-rails]
 gem "cssbundling-rails"
+
+# Manages file uploads and attachments in Rails applications [https://guides.rubyonrails.org/active_storage_overview.html]
 gem "activestorage"
+
+# Object-oriented authorization library for Rails [https://github.com/varvet/pundit]
 gem "pundit"
+
+# Provides I18n support for Rails applications [https://github.com/svenfuchs/rails-i18n]
 gem 'rails-i18n'
+
+# Ruby Internationalization and localization solution [https://github.com/ruby-i18n/i18n]
 gem 'i18n'
 
