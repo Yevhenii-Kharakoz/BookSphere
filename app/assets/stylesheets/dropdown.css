@@ -1,0 +1,7 @@
+.authors select{
+  width: 450px;
+}
+
+.selected {
+  padding: 10px;
+}

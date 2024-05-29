@@ -1,0 +1,27 @@
+<h1><%= t('titles.reviews') %></h1>
+<%= link_to t('links.back'), home_path %>
+<table>
+  <thead>
+  <tr>
+    <th><%= t('labels.user') %></th>
+    <th><%= t('labels.library') %></th>
+    <th><%= t('labels.actions') %></th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @reviews.each do |review| %>
+    <tr>
+      <td><%= review.user.name %></td>
+      <td>
+        <%= link_to t('links.show'), review %>
+        <%= link_to t('links.edit'), edit_review_path(review) %>
+        <%= button_to t('buttons.destroy'), review, method: :delete %>
+      </td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to t('links.new_review'), new_review_path %>

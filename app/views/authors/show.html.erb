@@ -1,0 +1,15 @@
+<br>
+<div class="container">
+  <% if user_signed_in? %>
+    <h1><%= t('titles.author_name', name: @author.name) %></h1>
+  <% else %>
+    <h1><%= t('titles.sign_in') %></h1>
+  <% end %>
+
+  <%= link_to t('links.back_to_authors_list'), authors_path, class: "btn btn-outline-dark" %><br>
+
+  <% if user_signed_in? %>
+    <%= link_to t('links.edit_author'), edit_author_path, class: "btn btn-outline-dark"%>
+    <%= button_to t('buttons.delete_author'), author_path, method: :delete, data: { confirm: t('messages.confirm_delete_author') } %>
+  <% end %>
+</div>

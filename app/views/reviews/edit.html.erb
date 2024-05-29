@@ -1,0 +1,23 @@
+<h1><%= t('titles.edit_review') %></h1>
+
+<% if flash[:alert] %>
+  <div class="alert alert-danger">
+    <%= flash[:alert] %>
+  </div>
+<% end %>
+
+<%= form_with(model: @review, url: review_path(@review), method: :patch) do |form| %>
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.collection_select :user_id, @users, :id, :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :library_id %>
+    <%= form.collection_select :library_id, @libraries, :id, :name %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

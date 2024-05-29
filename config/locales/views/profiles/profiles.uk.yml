@@ -1,0 +1,16 @@
+uk:
+  titles:
+    my_profile: "Мій профіль"
+    my_books: "Мої книги"
+  labels:
+    email: "Електронна пошта"
+    city: "Місто"
+    phone_number: "Номер телефону"
+    age: "Вік"
+    pages: "стор."
+    giving_away: "Віддаю"
+    looking_for: "Розшукую"
+  buttons:
+    edit_profile: "Редагувати профіль"
+  messages:
+    no_books: "У вас ще немає книг."

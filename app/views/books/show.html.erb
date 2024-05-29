@@ -1,0 +1,28 @@
+<div class="container">
+  <h1><%= @book.title %></h1>
+  <p><strong><%= t('labels.description') %>:</strong> <%= @book.descr %></p>
+  <p><strong><%= t('labels.page_count') %>:</strong> <%= @book.count_pages %></p>
+  <p><strong><%= t('labels.status') %>:</strong>
+    <% if @book.status %>
+      <%= t('advertisement_statuses.giving_away') %>
+    <% else %>
+      <%= t('advertisement_statuses.looking_for') %>
+    <% end %>
+  </p>
+  <p><strong><%= t('labels.advertisement_author') %>:</strong> <%= link_to @user.email, user_path(@user) %></p>
+  <p><strong><%= t('labels.book_authors') %>:</strong></p>
+  <ul>
+    <% @book.authors.each do |author| %>
+      <li><%= author.name %></li>
+    <% end %>
+  </ul>
+
+  <p><strong><%= t('labels.genre') %>:</strong> <%= @book.genre.title %></p>
+
+  <%= link_to t('buttons.back_to_advertisements'), books_path, class: "btn btn-outline-dark" %>
+  <% if user_signed_in? && (current_user.id == @book.user_id || current_user.admin?) %>
+    <h4><br><%= t('messages.created_by_you') %></h4>
+    <%= link_to t('buttons.edit_advertisement'), edit_book_path(@book), class: "btn btn-outline-dark mt-2" %>
+    <%= button_to t('buttons.delete_advertisement'), @book, method: :delete, class: "btn btn-outline-danger mt-2"%>
+  <% end %>
+</div>

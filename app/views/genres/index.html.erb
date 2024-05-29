@@ -1,0 +1,32 @@
+<% if user_signed_in? %>
+  <div class="container mt-5">
+    <%= image_tag 'banner_genres.jpg', class: 'img-fluid banner-image', style: "height: 365px;" %>
+    <h1 class="text-center mt-2"><%= t('titles.genres') %></h1>
+    <div class="text-center mb-4">
+      <%= link_to t('links.back_to_advertisements'), home_path, class: "btn btn-secondary" %>
+    </div>
+    <div class="row">
+      <% @genres.each do |genre| %>
+        <div class="col-md-4 mb-4">
+          <div class="card genre-card">
+            <%= image_tag_ignore_case("#{genre.title}.jpg", class: 'card-img-top genre-image', alt: genre.title) %>
+            <div class="card-body">
+              <% if current_user.admin? %>
+                <h5 class="card-title"><%= link_to genre.title, genre_path(genre), class: "genre-link" %></h5>
+              <% else %>
+                <h5 class="card-title"><%= genre.title %></h5>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <% if current_user.admin? %>
+      <div class="text-center mt-4">
+        <%= link_to t('buttons.add_new_genre'), new_genre_path, class: "btn btn-primary" %>
+      </div>
+    <% end %>
+  </div>
+<% else %>
+  <h1><%= t('titles.sign_in') %></h1>
+<% end %>

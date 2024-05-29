@@ -1,0 +1,19 @@
+uk:
+  titles:
+    edit_genre: "Змінити жанр %{title}"
+    genres: "Жанри"
+    add_new_genre: "Додати новий жанр"
+    sign_in: "Увійдіть до аккаунту!"
+    genre_title: "Назва жанру"
+  forms:
+    labels:
+      genre_title: "Назва жанру"
+    submit:
+      edit_genre: "Змінити жанр"
+  links:
+    back_to_advertisements: "Повернутися до оголошень"
+    back_to_genres_list: "Повернутися до списку жанрів"
+  buttons:
+    add_new_genre: "Додати новий жанр"
+    edit_genre: "Змінити жанр"
+    delete_genre: "Видалити жанр"

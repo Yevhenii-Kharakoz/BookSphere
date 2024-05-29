@@ -1,0 +1,19 @@
+en:
+  titles:
+    edit_genre: "Edit Genre %{title}"
+    genres: "Genres"
+    add_new_genre: "Add New Genre"
+    sign_in: "Sign In"
+    genre_title: "Genre Title"
+  forms:
+    labels:
+      genre_title: "Genre Title"
+    submit:
+      edit_genre: "Edit Genre"
+  links:
+    back_to_advertisements: "Back to Advertisements"
+    back_to_genres_list: "Back to Genres List"
+  buttons:
+    add_new_genre: "Add New Genre"
+    edit_genre: "Edit Genre"
+    delete_genre: "Delete Genre"

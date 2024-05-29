@@ -1,0 +1,24 @@
+<% if flash[:alert] %>
+  <div class="alert alert-danger">
+    <%= flash[:alert] %>
+  </div>
+<% end %>
+
+<% if user_signed_in? %>
+  <%= form_with(model: @author, url: authors_path) do |form| %>
+    <div class="container">
+      <br>
+      <h1><%= t('titles.add_new_author') %></h1>
+      <p>
+        <%= form.label t('labels.enter_name') %><br>
+        <%= form.text_field :name %>
+      </p>
+      <br>
+      <p>
+        <%= form.submit t('forms.submit.add_author') %>
+      </p>
+    </div>
+  <% end %>
+<% else %>
+  <h1><%= t('titles.sign_in') %></h1>
+<% end %>

@@ -1,0 +1,56 @@
+<% provide(:page_class, 'users-background') %>
+<% provide(:container_class, 'login') %>
+<% content_for :auth_page, true %>
+<div class="auth-card card shadow-lg">
+  <div class="card-body">
+    <h2 class="auth-header"><%= t('titles.sign_up') %></h2>
+
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+      <%= render "devise/shared/error_messages", resource: resource %>
+
+      <div class="field">
+        <%= f.label t('labels.email') %><br />
+        <%= f.email_field :email, class: "form-control form-control-auth", autofocus: true, autocomplete: "email", required: true %>
+      </div>
+
+      <div class="field">
+        <%= f.label t('labels.password') %>
+        <% if @minimum_password_length %>
+          <em>(<%= @minimum_password_length %> <%= t('labels.characters_minimum') %>)</em>
+        <% end %><br />
+        <%= f.password_field :password, class: "form-control form-control-auth", autocomplete: "new-password", required: true %>
+      </div>
+
+      <div class="field">
+        <%= f.label t('labels.password_confirmation') %><br />
+        <%= f.password_field :password_confirmation, class: "form-control form-control-auth", autocomplete: "new-password", required: true %>
+      </div>
+
+      <div class="field">
+        <%= f.label t('labels.name') %><br />
+        <%= f.text_field :name, class: "form-control form-control-auth", required: true %>
+      </div>
+
+      <div class="field">
+        <%= f.label t('labels.city') %><br />
+        <%= f.text_field :city, class: "form-control form-control-auth", required: true %>
+      </div>
+
+      <div class="field">
+        <%= f.label t('labels.age') %><br />
+        <%= f.number_field :age, class: "form-control form-control-auth", min: 10, max: 90, required: true %>
+      </div>
+
+      <div class="field">
+        <%= f.label t('labels.phone_number') %><br />
+        <%= f.text_field :phone_number, class: "form-control form-control-auth", required: true, pattern: "\\+[0-9]+" %>
+      </div>
+
+      <div class="text-center mt-2">
+        <%= f.submit t('buttons.sign_up'), class: "btn btn-primary auth-button btn-lg" %>
+      </div>
+    <% end %>
+
+    <%= render "devise/shared/links" %>
+  </div>
+</div>

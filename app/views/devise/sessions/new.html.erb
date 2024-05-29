@@ -1,0 +1,31 @@
+<% provide(:page_class, 'users-background') %>
+<% provide(:container_class, 'login') %>
+<div class="auth-card card shadow-lg">
+  <div class="card-body">
+    <h2 class="auth-header"><%= t('titles.log_in') %></h2>
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+      <div class="mb-3">
+        <%= f.label t('labels.email') %><br />
+        <%= f.email_field :email, class: "form-control form-control-auth", autofocus: true, autocomplete: "email", required: true %>
+      </div>
+
+      <div class="mb-3">
+        <%= f.label t('labels.password') %>
+        <%= f.password_field :password, class: "form-control form-control-auth", autocomplete: "new-password", required: true %>
+      </div>
+
+      <% if devise_mapping.rememberable? %>
+        <div class="field">
+          <%= f.check_box :remember_me %>
+          <%= f.label t('devise.shared.remember_me') %>
+        </div>
+      <% end %>
+
+      <div class="actions">
+        <%= f.submit t('buttons.log_in'), class: "btn btn-primary" %>
+      </div>
+    <% end %>
+
+    <%= render "devise/shared/links" %>
+  </div>
+</div>

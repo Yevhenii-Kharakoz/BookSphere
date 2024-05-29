@@ -1,0 +1,32 @@
+en:
+  titles:
+    edit_user: "Edit user"
+    all_users: "All Users"
+    all_advertisements: "All Advertisements"
+  labels:
+    name: "Name"
+    address: "Address"
+    email: "Email"
+    city: "City"
+    phone_number: "Phone Number"
+    age: "Age"
+    books_count: "Books Count"
+    link: "Link"
+  buttons:
+    submit: "Submit"
+    search: "Search"
+    delete_user: "Delete User"
+  messages:
+    alert: "Error!"
+  links:
+    back: "Back"
+    link: "link"
+    back_to_user_list: "Back to User List"
+    edit_user: "Edit User"
+  placeholders:
+    search_by_name: "Search by name"
+    search_by_age: "Search by age"
+    search_by_count: "Search by count"
+    pages: "pages"
+    giving_away: "Giving Away"
+    looking_for: "Looking For"

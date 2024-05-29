@@ -1,0 +1,24 @@
+uk:
+  titles:
+    edit_author: "Змінити автора"
+    sign_in: "Увійдіть до аккаунту!"
+    all_authors: "Список усіх авторів"
+    add_new_author: "Додати нового автора"
+    author_name: "Ім'я автора: %{name}"
+
+  forms:
+    labels:
+      name: "Ім'я"
+      enter_name: "Введіть ім'я"
+    submit:
+      edit_author: "Змінити автора"
+      add_author: "Додати автора"
+  links:
+    back_to_home: "Повернутися до головної сторінки"
+    add_new_author: "Додати нового автора"
+    back_to_authors_list: "Повернутися до списку авторів"
+    edit_author: "Змінити автора"
+  buttons:
+    delete_author: "Видалити автора"
+  messages:
+    confirm_delete_author: "Ви впевнені, що хочете видалити цього автора?"

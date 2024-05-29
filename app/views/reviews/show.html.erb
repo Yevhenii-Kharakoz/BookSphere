@@ -1,0 +1,29 @@
+<h1><%= t('titles.reader_card_details') %></h1>
+
+<table>
+  <tr>
+    <td><strong><%= t('labels.user') %>:</strong></td>
+    <td><%= @reader_card.user.name %></td>
+  </tr>
+  <tr>
+    <td><strong><%= t('labels.library') %>:</strong></td>
+    <td><%= @reader_card.library.name %></td>
+  </tr>
+  <tr>
+    <td><strong><%= t('labels.books') %>:</strong></td>
+    <td>
+      <% if @reader_card.books.any? %>
+        <ul>
+          <% @reader_card.books.each do |book| %>
+            <li><%= book.title %></li>
+          <% end %>
+        </ul>
+      <% else %>
+        <p><%= t('messages.no_books_yet') %></p>
+      <% end %>
+    </td>
+  </tr>
+</table>
+
+<p><%= link_to t('links.edit'), edit_reader_card_path(@reader_card) %></p>
+<p><%= link_to t('links.back'), reader_cards_path %></p>

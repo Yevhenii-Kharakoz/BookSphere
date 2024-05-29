@@ -1,0 +1,26 @@
+<br>
+<div class="container">
+  <% if user_signed_in? %>
+    <h1><%= t('titles.edit_author', author: @author.name) %></h1>
+  <% else %>
+    <h1><%= t('titles.sign_in') %></h1>
+  <% end %>
+
+  <% if flash[:alert] %>
+    <div class="alert alert-danger">
+      <%= flash[:alert] %>
+    </div>
+  <% end %>
+
+  <% if user_signed_in? %>
+    <%= form_with(model: @author, url: author_path) do |form| %>
+      <p>
+        <%= form.label :name, t('forms.labels.name') %><br>
+        <%= form.text_field :name %>
+      </p>
+      <p>
+        <%= form.submit t('forms.submit.edit_author') %>
+      </p>
+    <% end %>
+  <% end %>
+</div>

@@ -1,0 +1,21 @@
+<% if flash[:alert] %>
+  <div class="alert alert-danger">
+    <%= flash[:alert] %>
+  </div>
+<% end %>
+<% if user_signed_in? %>
+  <div class="container">
+    <h1><%= t('titles.add_new_genre') %></h1>
+    <%= form_with(model: @genre, url: genres_path) do |form| %>
+      <p>
+        <%= form.label t('forms.labels.genre_title') %><br>
+        <%= form.text_field :title %>
+      </p>
+      <p>
+        <%= form.submit %>
+      </p>
+    <% end %>
+  </div>
+<% else %>
+  <h1><%= t('titles.sign_in') %></h1>
+<% end %>

@@ -1,0 +1,23 @@
+<h1><%= t('titles.edit_user') %></h1>
+<% provide(:page_class, 'users-background') %>
+<% if flash[:alert] %>
+  <div class="alert alert-danger">
+    <%= flash[:alert] %>
+  </div>
+<% end %>
+
+<%= form_with(model: @user, url: user_path) do |form| %>
+  <p>
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
+  </p>
+
+  <p>
+    <%= form.label :address %><br>
+    <%= form.text_field :address %>
+  </p>
+
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>

@@ -1,0 +1,14 @@
+<br>
+<div class="container">
+  <% if user_signed_in? %>
+    <h1><%= t('titles.genre_title') %>: <%= @genre.title %></h1>
+  <% else %>
+    <h1><%= t('titles.sign_in') %></h1>
+  <% end %>
+
+  <%= link_to t('links.back_to_genres_list'), genres_path, class: "btn btn-outline-dark" %><br>
+  <% if user_signed_in? %>
+    <%= link_to t('buttons.edit_genre'), edit_genre_path, class: "btn btn-outline-dark" %>
+    <%= button_to t('buttons.delete_genre'), @genre, method: :delete %>
+  <% end %>
+</div>

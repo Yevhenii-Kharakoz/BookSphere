@@ -1,0 +1,32 @@
+uk:
+  titles:
+    edit_user: "Редагувати користувача"
+    all_users: "Всі користувачі"
+    all_advertisements: "Усі оголошення"
+  labels:
+    name: "Ім'я"
+    address: "Адреса"
+    email: "Електронна пошта"
+    city: "Місто"
+    phone_number: "Номер телефону"
+    age: "Вік"
+    books_count: "Кількість книг"
+    link: "Посилання"
+  buttons:
+    submit: "Зберегти"
+    search: "Пошук"
+    delete_user: "Видалити користувача"
+  messages:
+    alert: "Помилка!"
+  links:
+    back: "Назад"
+    link: "посилання"
+    back_to_user_list: "Повернутися до списку користувачів"
+    edit_user: "Редагувати користувача"
+  placeholders:
+    search_by_name: "Пошук за іменем"
+    search_by_age: "Пошук за віком"
+    search_by_count: "Пошук за кількістю"
+    pages: "стор."
+    giving_away: "Віддаю"
+    looking_for: "Розшукую"

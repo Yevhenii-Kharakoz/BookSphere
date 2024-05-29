@@ -1,0 +1,56 @@
+uk:
+  titles:
+    edit_announcement: "Змінити оголошення"
+    genres: "Жанри"
+    all_books: "Усі книги"
+    sign_in: "Увійти"
+    create_new_advertisement: "Створити нове оголошення"
+    search: "Пошук"
+  forms:
+    labels:
+      looking_for: "Шукаю"
+      giving_away: "Віддаю"
+      pages: "Сторінки"
+      status: "Статус"
+      email: "Електронна пошта"
+      password: "Пароль"
+      advertisement_title: "Назва оголошення:"
+      advertisement_description: "Опис оголошення:"
+      book_page_count: "Кількість сторінок книги:"
+      advertisement_status: "Статус оголошення:"
+      exact_title: "За точною назвою:"
+      page_count: "За кількістю сторінок:"
+    submit:
+      edit_announcement: "Змінити оголошення"
+      create_advertisement: "Створити оголошення"
+      sign_in: "Увійти"
+      search: "Пошук"
+    characters: "символів"
+  labels:
+    title: "Назва"
+    authors: "Автори"
+    genre: "Жанр"
+    description: "Опис"
+    page_count: "Кількість сторінок"
+    status: "Статус"
+    advertisement_author: "Автор оголошення"
+    book_authors: "Автори книжки"
+  links:
+    back_to_home: "Головна сторінка"
+    personal_cabinet: "Особистий кабінет"
+    create_advertisement: "Створити оголошення"
+    details: "Деталі"
+    back_to_advertisements: "Повернутися до оголошень"
+  buttons:
+    sign_in: "Увійти"
+    create_advertisement: "Створити оголошення"
+    find: "Знайти"
+    back_to_advertisements: "Повернутися до оголошень"
+    delete_advertisement: "Видалити оголошення"
+    edit_advertisement: "Змінити оголошення"
+  advertisement_statuses:
+    giving_away: "Віддаю"
+    looking_for: "Розшукую"
+  messages:
+    confirm_delete_advertisement: "Ви впевнені, що хочете видалити це оголошення?"
+    created_by_you: "Ви створили це оголошення!"

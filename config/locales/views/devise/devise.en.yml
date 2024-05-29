@@ -1,0 +1,86 @@
+en:
+  titles:
+    resend_confirmation_instructions: "Resend Confirmation Instructions"
+    change_password: "Change your password"
+    forgot_password: "Forgot your password?"
+    edit_user: "Edit User"
+    sign_up: "Sign Up"
+    log_in: "Log in"
+    resend_unlock_instructions: "Resend unlock instructions"
+  labels:
+    email: "Email"
+    characters_minimum: "characters minimum"
+    new_password: "New password"
+    password_confirmation: "Confirm new password"
+    password: "Password"
+    current_password: "Current Password"
+    name: "Name"
+    city: "City"
+    phone_number: "Phone Number"
+    age: "Age"
+  buttons:
+    resend_confirmation_instructions: "Resend confirmation instructions"
+    change_my_password: "Change my password"
+    send_reset_instructions: "Send me reset password instructions"
+    update: "Update"
+    cancel_account: "Cancel my account"
+    back: "Back"
+    sign_up: "Sign Up"
+    log_in: "Log in"
+    resend_unlock_instructions: "Resend unlock instructions"
+  messages:
+    welcome: "Welcome %{email}!"
+    confirm_account_instructions: "You can confirm your account email through the link below:"
+    confirm_account: "Confirm my account"
+    hello: "Hello %{email}!"
+    email_change_pending: "We're contacting you to notify you that your email is being changed to %{unconfirmed_email}."
+    email_change_confirmed: "We're contacting you to notify you that your email has been changed to %{email}."
+    password_changed: "We're contacting you to notify you that your password has been changed."
+    password_change_request: "Someone has requested a link to change your password. You can do this through the link below."
+    change_password: "Change my password"
+    ignore_request: "If you didn't request this, please ignore this email."
+    password_not_changed: "Your password won't change until you access the link above and create a new one."
+    account_locked: "Your account has been locked due to an excessive number of unsuccessful sign in attempts."
+    unlock_account: "Click the link below to unlock your account:"
+    unlock_my_account: "Unlock my account"
+  errors:
+    messages:
+      not_saved: "Could not save the %{resource}: %{count} errors"
+  devise:
+    sessions:
+      signed_in: 'Successfully signed in'
+      signed_out: 'Successfully signed out'
+    registrations:
+      signed_up: 'Thank you for signing up!'
+    passwords:
+      no_token: "You can't access this page without coming from a password reset email."
+      send_instructions: "You will receive an email with instructions on how to reset your password in a few minutes."
+      send_paranoid_instructions: "If your email address exists in our database, you will receive a password recovery link at your email address in a few minutes."
+      updated: "Your password has been changed successfully. You are now signed in."
+      updated_not_active: "Your password has been changed successfully."
+    confirmations:
+      confirmed: "Your email address has been successfully confirmed."
+      send_instructions: "You will receive an email with instructions for confirming your email address in a few minutes."
+      send_paranoid_instructions: "If your email address exists in our database, you will receive an email with instructions for confirming your email address in a few minutes."
+    mailer:
+      confirmation_instructions:
+      subject: "Confirmation instructions"
+      greeting: "Hello, %{email}!"
+      message: "You have received this email because your email address was used to register on our site. Please confirm your email by clicking the link below."
+      action: "Confirm my email"
+    reset_password_instructions:
+      subject: "Reset password instructions"
+      greeting: "Hello, %{email}!"
+      message: "You have requested to reset your password. Please click the link below to change your password."
+      action: "Change my password"
+    links:
+      log_in: "Log in"
+      sign_up: "Sign up"
+      forgot_password: "Forgot your password?"
+      resend_confirmation_instructions: "Resend Confirmation Instructions"
+      didnt_receive_unlock_instructions: "Didn't receive unlock instructions?"
+    shared:
+      remember_me: "Remember me"
+    buttons:
+      sign_in_with_provider: "Sign in with %{provider}"
+      resend_unlock_instructions: "Resend unlock instructions"

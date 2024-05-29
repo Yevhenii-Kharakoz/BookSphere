@@ -1,0 +1,16 @@
+en:
+  titles:
+    my_profile: "My Profile"
+    my_books: "My Books"
+  labels:
+    email: "Email"
+    city: "City"
+    phone_number: "Phone Number"
+    age: "Age"
+    pages: "pages"
+    giving_away: "Giving Away"
+    looking_for: "Looking For"
+  buttons:
+    edit_profile: "Edit Profile"
+  messages:
+    no_books: "You don't have any books yet."

@@ -1,0 +1,55 @@
+<br>
+<div class="container">
+  <h2 class="text-center mt-4"><%= t('titles.search') %></h2>
+  <%= form_with url: search_book_path, method: "get" do |form| %>
+    <div class="field">
+      <%= form.label t('forms.labels.exact_title') %>
+      <%= form.text_field :title, class: 'form-control-auth', id: "book_title", maxlength: 100 %>
+      <p id="title_char_count" class="text-muted">0/100 <%= t('characters') %></p>
+    </div>
+    <div class="field mt-3">
+      <%= form.label t('forms.labels.page_count') %>
+      <%= form.number_field :count_pages, class: 'form-control-auth'%>
+    </div>
+    <div class="field mt-3">
+      <%= form.label t('forms.labels.advertisement_status') %>
+      <%= form.select :status, [[t('advertisement_statuses.looking_for'), "true"], [t('advertisement_statuses.giving_away'), "false"]], { include_blank: true }, class: 'form-control form-control-auth' %>
+    </div>
+    <div class="field mt-3">
+      <%= form.label t('labels.genre') %>
+      <%= form.collection_select :genre_id, @genres, :id, :title, { include_blank: true }, class: 'form-control form-control-auth' %>
+    </div>
+    <div class="field mt-3">
+      <%= form.label t('labels.authors') %>
+      <%= form.collection_select :author_id, @authors, :id, :name, { include_blank: true }, class: 'form-control form-control-auth' %>
+    </div>
+    <div class="actions text-center mt-4">
+      <%= form.button t('buttons.find'), class: "btn btn-primary auth-button" %>
+    </div>
+  <% end %>
+</div>
+
+<br>
+<div class="container border border-dark border-2 rounded-3" style="--bs-border-opacity: .6;">
+  <% @result.each do |book| %>
+    <div class="row p-3 border-bottom border-dark border-2" style="--bs-border-opacity: .6;">
+      <div class="col col-lg-2">
+        <%= image_tag 'placeholder.jpg', class: 'img-fluid' %>
+      </div>
+      <div class="col text-left">
+        <div class="row">
+          <h3><%= link_to book.title, book %></h3>
+        </div>
+        <div class="row">
+          <p class="card-text description"><%= book.descr %></p>
+        </div>
+      </div>
+      <div class="col col-lg-2 text-center">
+        <br><br>
+        <h5><%= book.count_pages %> <%= t('labels.pages') %></h5>
+        <h4><%= book.status ? t('advertisement_statuses.giving_away') : t('advertisement_statuses.looking_for') %></h4>
+      </div>
+    </div>
+  <% end %>
+</div>
+<br>

@@ -1,0 +1,23 @@
+en:
+  titles:
+    edit_review: "Edit Review"
+    reviews: "Reviews"
+    new_review: "New Review"
+    reader_card_details: "Reader Card Details"
+  labels:
+    user_id: "User"
+    library_id: "Library"
+    user: "User"
+    library: "Library"
+    books: "Books"
+    actions: "Actions"
+  messages:
+    alert: "Error!"
+    no_books_yet: "No books yet"
+  buttons:
+    submit: "Submit"
+    back: "Back"
+    show: "Show"
+    edit: "Edit"
+    new_review: "New Review"
+    destroy: "Destroy"

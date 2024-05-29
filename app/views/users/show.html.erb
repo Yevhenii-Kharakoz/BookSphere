@@ -1,0 +1,51 @@
+<br>
+<% provide(:page_class, 'users-background') %>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <% if user_signed_in? %>
+        <h1><%= @user.name %></h1>
+        <p><%= t('labels.email') %>: <%= @user.email %></p>
+        <p><%= t('labels.city') %>: <%= @user.city %></p>
+        <p><%= t('labels.phone_number') %>: <%= @user.phone_number %></p>
+        <p><%= t('labels.age') %>: <%=@user.age %></p>
+      <% end %>
+    </div>
+    <div class="col-lg-4 text-center">
+      <br><%= link_to t('links.back_to_user_list'), users_path, class: "btn btn-primary mt-2" %>
+      <% if current_user.admin? %>
+        <%= link_to t('links.edit_user'), edit_user_registration_path, class: "btn btn-primary mt-2" %>
+        <%= button_to t('buttons.delete_user'), @user, method: :delete,  class: "btn btn-danger auth-button mt-2" %>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<br>
+<div class="container border border-dark border-2 rounded-3" style="--bs-border-opacity: .6;">
+  <div class="row p-3 border-bottom border-dark border-2 text-center" style="--bs-border-opacity: .6;">
+    <h1><%= t('titles.all_advertisements') %></h1>
+  </div>
+  <% @books.each do |book| %>
+    <% if(book.user_id == @user.id) %>
+      <div class="row p-3 border-bottom border-dark border-2" style="--bs-border-opacity: .6;">
+        <div class="col col-lg-2">
+          <%= image_tag 'placeholder.jpg', style: "width:150px;height:175px;" %>
+        </div>
+        <div class="col text-left">
+          <div class="row">
+            <h3><%= link_to book.title, book %></h3>
+          </div>
+          <div class="row">
+            <p class="card-text description"><%= book.descr %></p>
+          </div>
+        </div>
+        <div class="col col-lg-2">
+          <br><br>
+          <h5><%= book.count_pages %> <%= t('labels.pages') %></h5>
+          <h4><%= book.status ? t('labels.giving_away') : t('labels.looking_for') %></h4>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+</div>

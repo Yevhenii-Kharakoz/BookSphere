@@ -1,0 +1,24 @@
+en:
+  titles:
+    edit_author: "Edit Author"
+    sign_in: "Sign in to your account!"
+    all_authors: "List of all Authors"
+    add_new_author: "Add a New Author"
+    author_name: "Author's name: %{name}"
+
+  forms:
+    labels:
+      name: "Name"
+      enter_name: "Enter name"
+    submit:
+      edit_author: "Edit Author"
+      add_author: "Add Author"
+  links:
+    back_to_home: "Return to Home"
+    add_new_author: "Add a New Author"
+    back_to_authors_list: "Return to Authors List"
+    edit_author: "Edit Author"
+  buttons:
+    delete_author: "Delete Author"
+  messages:
+    confirm_delete_author: "Are you sure you want to delete this author?"

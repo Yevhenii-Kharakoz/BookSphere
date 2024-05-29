@@ -1,0 +1,61 @@
+en:
+  titles:
+    edit_announcement: "Edit Announcement"
+    genres: "Genres"
+    all_books: "All Books"
+    sign_in: "Sign In"
+    create_new_advertisement: "Create New Advertisement"
+    search: "Search"
+  forms:
+    labels:
+      looking_for: "Looking For"
+      giving_away: "Giving Away"
+      pages: "Pages"
+      status: "Status"
+      email: "Email"
+      password: "Password"
+      advertisement_title: "Advertisement Title:"
+      advertisement_description: "Advertisement Description:"
+      book_page_count: "Book Page Count:"
+      advertisement_status: "Advertisement Status:"
+      exact_title: "Exact Title:"
+      page_count: "Page Count:"
+      type: "Type"
+    submit:
+      edit_announcement: "Edit Announcement"
+      create_advertisement: "Create Advertisement"
+      sign_in: "Sign In"
+      search: "Search"
+    characters: "characters"
+  labels:
+    title: "Title"
+    authors: "Authors"
+    genre: "Genre"
+    description: "Description"
+    page_count: "Page Count"
+    status: "Status"
+    advertisement_author: "Advertisement Author"
+    book_authors: "Book Authors"
+  links:
+    search: "Search"
+    details: "Details"
+    home_page: "Home Page"
+    personal_cabinet: "Personal Cabinet"
+    create_advertisement: "Create Advertisement"
+    back_to_advertisements: "Back to Advertisements"
+  buttons:
+    sign_in: "Sign In"
+    create_advertisement: "Create Advertisement"
+    find: "Find"
+    back_to_advertisements: "Back to Advertisements"
+    delete_advertisement: "Delete Advertisement"
+    edit_advertisement: "Edit Advertisement"
+  placeholders:
+    enter_email: "Enter email..."
+    enter_password: "Enter password..."
+  advertisement_statuses:
+    giving_away: "Giving Away"
+    looking_for: "Looking For"
+  messages:
+    confirm_delete_advertisement: "Are you sure you want to delete this advertisement?"
+    created_by_you: "You created this advertisement!"

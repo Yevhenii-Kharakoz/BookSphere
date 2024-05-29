@@ -1,0 +1,23 @@
+uk:
+  titles:
+    edit_review: "Редагувати відгук"
+    reviews: "Відгуки"
+    new_review: "Новий відгук"
+    reader_card_details: "Деталі читацького квитка"
+  labels:
+    user_id: "Користувач"
+    library_id: "Бібліотека"
+    user: "Користувач"
+    library: "Бібліотека"
+    books: "Книги"
+    actions: "Дії"
+  messages:
+    alert: "Помилка!"
+    no_books_yet: "Ще немає книг"
+  buttons:
+    submit: "Надіслати"
+    back: "Назад"
+    show: "Показати"
+    edit: "Редагувати"
+    new_review: "Новий відгук"
+    destroy: "Видалити"

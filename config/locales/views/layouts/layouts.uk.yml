@@ -1,0 +1,18 @@
+uk:
+  links:
+    announcements: "Оголошення"
+    authors: "Автори"
+    users: "Користувачі"
+    genres: "Жанри"
+    add_announcement: "Додати нове оголошення"
+    my_profile: "Мій профіль"
+  buttons:
+    sign_out: "Вийти"
+    sign_in: "Увійти"
+  forms:
+    labels:
+      genre_title: "Назва жанру"
+  messages:
+    success: "Успіх!"
+    error: "Помилка!"
+    warning: "Попередження!"
