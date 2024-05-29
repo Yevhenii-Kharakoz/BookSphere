@@ -2,6 +2,12 @@
 
 Це веб-додаток для буккроссингу, розроблений на Ruby on Rails. Він дозволяє користувачам обмінюватися книгами, знаходити книги в їхньому регіоні та відстежувати свої книжкові подорожі.
 
+# ER Діаграма:
+![ER-Diagram](https://github.com/Yevhenii-Kharakoz/BookSphere/assets/144804028/e85f73c3-304c-48e4-aa0d-92acef0c2729)
+
+# UML Діаграма:
+![UML-Diagram](https://github.com/Yevhenii-Kharakoz/BookSphere/assets/144804028/1b7b0f16-df8c-4a07-883b-c0116a7439d9)
+
 ## Встановлення
 
 ### Вимоги
